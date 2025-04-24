@@ -1,13 +1,13 @@
-# Proyecto de Boosting Logístico  
+# Análisis Predictivo del Rendimiento Académico 
 **Autor**: Jorge Carnicero Príncipe
 
-**Versión de Python usada**: 3.12.7
+Este proyecto tiene como objetivo realizar una **predicción de la nota final** de los estudiantes a partir de distintos conjuntos de variables académicas y sociales. Además del análisis predictivo, se lleva a cabo una interpretación de las variables más influyentes, proponiendo posibles líneas de intervención desde el punto de vista de un **director académico**.
 
-Este notebook implementa y analiza paso a paso un modelo de boosting logístico binario, con visualizaciones y explicaciones interactivas para facilitar la comprensión del proceso de aprendizaje secuencial.
+También contiene una interpretación de cómo influyen **variables sociales**, reflexionando sobre cómo estas afectan a nuestro día a día y cómo podríamos adaptarnos a ellas para lograr un mejor rendimiento académico.
 
 ---
 
-## 📁 Contenido
+## Contenido
 
 - `main.ipynb`: notebook principal con el desarrollo del proyecto.
 - `LinearRegressor.py`: contiene el modelo de regresión lineal, implementado por nosotros.
@@ -17,19 +17,19 @@ Este notebook implementa y analiza paso a paso un modelo de boosting logístico 
 
 ---
 
-## ▶️ Requisitos y ejecución
+## Requisitos y ejecución
 
-### 1. Clona el repositorio (si aplica)
+### 1. Clona el repositorio o Descarga el Contenido 
 
 ```bash
-git clone https://github.com/tuusuario/tu-repo.git
-cd tu-repo
+git clone https://github.com/jorgecarnicero/ProyectoFinal-ML.git
+cd ProyectoFinal-ML
 ```
 
-### 2. Crea un entorno virtual (recomendado)
+### 2. Crea un entorno virtual (recomendado, pero no necesario)
 
 ```bash
-python3.12 -m venv venv
+python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 ```
 
@@ -40,9 +40,14 @@ pip install -r requirements.txt
 ```
 
 ### 4. Ejecuta el notebook
+La implementación es en un solo notebook, dividido en subsecciones para mayor velocidad y facilidad a la hora de querer analizar los datos. Ahorrandonos múltiples archivos.
 
-Puedes usar [Jupyter Notebook](https://jupyter.org/) o [VS Code](https://code.visualstudio.com/) con la extensión de Jupyter:
+#### Opción 1. Desde Jupyter
+Abre y ejecuta ``main.ipynb`` manualmente ( ▶ )
 
+#### Opción 2: Desde terminal (automático)
 ```bash
-jupyter notebook main.ipynb
+pip install jupyter
+jupyter nbconvert --to notebook --execute main.ipynb --output main_ejecutado.ipynb
 ```
+Y nos aparecerá un `main_ejecutado.ipynb`, con el notebook ejecutado
